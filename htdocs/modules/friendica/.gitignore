@@ -1,0 +1,20 @@
+favicon.*
+.htconfig.php
+\#*
+include/jquery-1.4.2.min.js
+*.log
+*.out
+*.version*
+favicon.*
+home.html
+addon
+*~
+
+#ignore documentation, it should be newly built 
+doc/api
+
+#ignore config files FROM eclipse, we don't want IDE files in our repository
+.project
+.buildpath
+.externalToolBuilders
+.settings
