@@ -1,5 +1,5 @@
 <?php
-	define ("KEY_NOT_EXISTS", '^R_key_not_Exists^');
+	define("KEY_NOT_EXISTS", '^R_key_not_Exists^');
 
 	class Template {
 		var $r;
