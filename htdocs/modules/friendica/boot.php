@@ -10,13 +10,13 @@ require_once($GLOBALS['xoops']->path("/modules/friendica/include/pgettext.php"))
 require_once($GLOBALS['xoops']->path("/modules/friendica/include/nav.php"));
 require_once($GLOBALS['xoops']->path("/modules/friendica/include/cache.php"));
 
-define( 'FRIENDICA_PLATFORM',     'Friendica');
-define( 'FRIENDICA_VERSION',      '2.3.1273' );
-define( 'DFRN_PROTOCOL_VERSION',  '2.22'    );
-define( 'DB_UPDATE_VERSION',      1131      );
+define('FRIENDICA_PLATFORM',     'Friendica');
+define('FRIENDICA_VERSION',      '2.3.1273' );
+define('DFRN_PROTOCOL_VERSION',  '2.22'    );
+define('DB_UPDATE_VERSION',      1131      );
 
-define( 'EOL',                    "<br />\r\n"     );
-define( 'ATOM_TIME',              'Y-m-d\TH:i:s\Z' );
+define('EOL',                    "<br />\r\n"     );
+define('ATOM_TIME',              'Y-m-d\TH:i:s\Z' );
 
 
 /**
@@ -29,51 +29,51 @@ define( 'ATOM_TIME',              'Y-m-d\TH:i:s\Z' );
  *
  */
 
-define( 'JPEG_QUALITY',            100  );         
+define('JPEG_QUALITY',            100  );         
 
 /**
  * SSL redirection policies
  */
 
-define( 'SSL_POLICY_NONE',         0 );
-define( 'SSL_POLICY_FULL',         1 );
-define( 'SSL_POLICY_SELFSIGN',     2 );
+define('SSL_POLICY_NONE',         0 );
+define('SSL_POLICY_FULL',         1 );
+define('SSL_POLICY_SELFSIGN',     2 );
 
 
 /**
  * log levels
  */
 
-define( 'LOGGER_NORMAL',          0 );
-define( 'LOGGER_TRACE',           1 );
-define( 'LOGGER_DEBUG',           2 );
-define( 'LOGGER_DATA',            3 );
-define( 'LOGGER_ALL',             4 );
+define('LOGGER_NORMAL',          0 );
+define('LOGGER_TRACE',           1 );
+define('LOGGER_DEBUG',           2 );
+define('LOGGER_DATA',            3 );
+define('LOGGER_ALL',             4 );
 
 /**
  * registration policies
  */
 
-define( 'REGISTER_CLOSED',        0 );
-define( 'REGISTER_APPROVE',       1 );
-define( 'REGISTER_OPEN',          2 );
+define('REGISTER_CLOSED',        0 );
+define('REGISTER_APPROVE',       1 );
+define('REGISTER_OPEN',          2 );
 
 /**
  * relationship types
  */
 
-define( 'CONTACT_IS_FOLLOWER', 1);
-define( 'CONTACT_IS_SHARING',  2);
-define( 'CONTACT_IS_FRIEND',   3);
+define('CONTACT_IS_FOLLOWER', 1);
+define('CONTACT_IS_SHARING',  2);
+define('CONTACT_IS_FRIEND',   3);
 
 
 /**
  * Hook array order
  */
  
-define( 'HOOK_HOOK',      0);
-define( 'HOOK_FILE',      1);
-define( 'HOOK_FUNCTION',  2);
+define('HOOK_HOOK',      0);
+define('HOOK_FILE',      1);
+define('HOOK_FUNCTION',  2);
 
 /**
  *
@@ -87,109 +87,109 @@ define( 'HOOK_FUNCTION',  2);
  *
  */
 
-define( 'PAGE_NORMAL',            0 );
-define( 'PAGE_SOAPBOX',           1 );
-define( 'PAGE_COMMUNITY',         2 );
-define( 'PAGE_FREELOVE',          3 );
-define( 'PAGE_BLOG',              4 );
+define('PAGE_NORMAL',            0 );
+define('PAGE_SOAPBOX',           1 );
+define('PAGE_COMMUNITY',         2 );
+define('PAGE_FREELOVE',          3 );
+define('PAGE_BLOG',              4 );
 
 /**
  * Network AND protocol family types 
  */
 
-define( 'NETWORK_ZOT',              'zot!');    // Zot!
-define( 'NETWORK_DFRN',             'dfrn');    // Friendica, Mistpark, other DFRN implementations
-define( 'NETWORK_OSTATUS',          'stat');    // status.net, identi.ca, GNU-social, other OStatus implementations
-define( 'NETWORK_FEED',             'feed');    // RSS/Atom feeds with no known "post/notify" protocol
-define( 'NETWORK_DIASPORA',         'dspr');    // Diaspora
-define( 'NETWORK_MAIL',             'mail');    // IMAP/POP
-define( 'NETWORK_MAIL2',            'mai2');    // extended IMAP/POP
-define( 'NETWORK_FACEBOOK',         'face');    // Facebook API     
-define( 'NETWORK_LINKEDIN',         'lnkd');    // LinkedIn
-define( 'NETWORK_XMPP',             'xmpp');    // XMPP     
-define( 'NETWORK_MYSPACE',          'mysp');    // MySpace
-define( 'NETWORK_GPLUS',            'goog');    // Google+
+define('NETWORK_ZOT',              'zot!');    // Zot!
+define('NETWORK_DFRN',             'dfrn');    // Friendica, Mistpark, other DFRN implementations
+define('NETWORK_OSTATUS',          'stat');    // status.net, identi.ca, GNU-social, other OStatus implementations
+define('NETWORK_FEED',             'feed');    // RSS/Atom feeds with no known "post/notify" protocol
+define('NETWORK_DIASPORA',         'dspr');    // Diaspora
+define('NETWORK_MAIL',             'mail');    // IMAP/POP
+define('NETWORK_MAIL2',            'mai2');    // extended IMAP/POP
+define('NETWORK_FACEBOOK',         'face');    // Facebook API     
+define('NETWORK_LINKEDIN',         'lnkd');    // LinkedIn
+define('NETWORK_XMPP',             'xmpp');    // XMPP     
+define('NETWORK_MYSPACE',          'mysp');    // MySpace
+define('NETWORK_GPLUS',            'goog');    // Google+
 
 /**
  * Maximum number of "people who like (or don't like) this"  that we will list by name
  */
 
-define( 'MAX_LIKERS',    75);
+define('MAX_LIKERS',    75);
 
 /**
  * Communication timeout
  */
 
-define( 'ZCURL_TIMEOUT' , (-1));
+define('ZCURL_TIMEOUT' , (-1));
 
 
 /**
  * email notification options
  */
 
-define( 'NOTIFY_intro',    0x0001 );
-define( 'NOTIFY_CONFIRM',  0x0002 );
-define( 'NOTIFY_WALL',     0x0004 );
-define( 'NOTIFY_COMMENT',  0x0008 );
-define( 'NOTIFY_MAIL',     0x0010 );
-define( 'NOTIFY_SUGGEST',  0x0020 );
-define( 'NOTIFY_PROFILE',  0x0040 );
-define( 'NOTIFY_TAGSELF',  0x0080 );
-define( 'NOTIFY_TAGSHARE', 0x0100 );
+define('NOTIFY_intro',    0x0001 );
+define('NOTIFY_CONFIRM',  0x0002 );
+define('NOTIFY_WALL',     0x0004 );
+define('NOTIFY_COMMENT',  0x0008 );
+define('NOTIFY_MAIL',     0x0010 );
+define('NOTIFY_SUGGEST',  0x0020 );
+define('NOTIFY_PROFILE',  0x0040 );
+define('NOTIFY_TAGSELF',  0x0080 );
+define('NOTIFY_TAGSHARE', 0x0100 );
 
 /**
  * various namespaces we may need to parse
  */
 
-define( 'NAMESPACE_ZOT',             'http://purl.org/macgirvin/zot' );
-define( 'NAMESPACE_DFRN' ,           'http://purl.org/macgirvin/dfrn/1.0' ); 
-define( 'NAMESPACE_THREAD' ,         'http://purl.org/syndication/thread/1.0' );
-define( 'NAMESPACE_TOMB' ,           'http://purl.org/atompub/tombstones/1.0' );
-define( 'NAMESPACE_ACTIVITY',        'http://activitystrea.ms/spec/1.0/' );
-define( 'NAMESPACE_ACTIVITY_SCHEMA', 'http://activitystrea.ms/schema/1.0/' );
-define( 'NAMESPACE_MEDIA',           'http://purl.org/syndication/atommedia' );
-define( 'NAMESPACE_SALMON_ME',       'http://salmon-protocol.org/ns/magic-env' );
-define( 'NAMESPACE_OSTATUSSUB',      'http://ostatus.org/schema/1.0/subscribe' );
-define( 'NAMESPACE_GEORSS',          'http://www.georss.org/georss' );
-define( 'NAMESPACE_POCO',            'http://portablecontacts.net/spec/1.0' );
-define( 'NAMESPACE_FEED',            'http://schemas.google.com/g/2010#updates-from' );
-define( 'NAMESPACE_OSTATUS',         'http://ostatus.org/schema/1.0' );
-define( 'NAMESPACE_STATUSNET',       'http://status.net/schema/api/1/' );
-define( 'NAMESPACE_ATOM1',           'http://www.w3.org/2005/Atom' );
+define('NAMESPACE_ZOT',             'http://purl.org/macgirvin/zot' );
+define('NAMESPACE_DFRN' ,           'http://purl.org/macgirvin/dfrn/1.0' ); 
+define('NAMESPACE_THREAD' ,         'http://purl.org/syndication/thread/1.0' );
+define('NAMESPACE_TOMB' ,           'http://purl.org/atompub/tombstones/1.0' );
+define('NAMESPACE_ACTIVITY',        'http://activitystrea.ms/spec/1.0/' );
+define('NAMESPACE_ACTIVITY_SCHEMA', 'http://activitystrea.ms/schema/1.0/' );
+define('NAMESPACE_MEDIA',           'http://purl.org/syndication/atommedia' );
+define('NAMESPACE_SALMON_ME',       'http://salmon-protocol.org/ns/magic-env' );
+define('NAMESPACE_OSTATUSSUB',      'http://ostatus.org/schema/1.0/subscribe' );
+define('NAMESPACE_GEORSS',          'http://www.georss.org/georss' );
+define('NAMESPACE_POCO',            'http://portablecontacts.net/spec/1.0' );
+define('NAMESPACE_FEED',            'http://schemas.google.com/g/2010#updates-from' );
+define('NAMESPACE_OSTATUS',         'http://ostatus.org/schema/1.0' );
+define('NAMESPACE_STATUSNET',       'http://status.net/schema/api/1/' );
+define('NAMESPACE_ATOM1',           'http://www.w3.org/2005/Atom' );
 /**
  * activity stream defines
  */
 
-define( 'ACTIVITY_LIKE',        NAMESPACE_ACTIVITY_SCHEMA . 'like' );
-define( 'ACTIVITY_DISLIKE',     NAMESPACE_DFRN            . '/dislike' );
-define( 'ACTIVITY_OBJ_HEART',   NAMESPACE_DFRN            . '/heart' );
+define('ACTIVITY_LIKE',        NAMESPACE_ACTIVITY_SCHEMA . 'like' );
+define('ACTIVITY_DISLIKE',     NAMESPACE_DFRN            . '/dislike' );
+define('ACTIVITY_OBJ_HEART',   NAMESPACE_DFRN            . '/heart' );
 
-define( 'ACTIVITY_FRIEND',      NAMESPACE_ACTIVITY_SCHEMA . 'make-friend' );
-define( 'ACTIVITY_REQ_FRIEND',  NAMESPACE_ACTIVITY_SCHEMA . 'request-friend' );
-define( 'ACTIVITY_UNFRIEND',    NAMESPACE_ACTIVITY_SCHEMA . 'remove-friend' );
-define( 'ACTIVITY_FOLLOW',      NAMESPACE_ACTIVITY_SCHEMA . 'follow' );
-define( 'ACTIVITY_UNFOLLOW',    NAMESPACE_ACTIVITY_SCHEMA . 'stop-following' );
-define( 'ACTIVITY_POST',        NAMESPACE_ACTIVITY_SCHEMA . 'post' );
-define( 'ACTIVITY_UPDATE',      NAMESPACE_ACTIVITY_SCHEMA . 'update' );
-define( 'ACTIVITY_TAG',         NAMESPACE_ACTIVITY_SCHEMA . 'tag' );
-define( 'ACTIVITY_FAVORITE',    NAMESPACE_ACTIVITY_SCHEMA . 'favorite' );
+define('ACTIVITY_FRIEND',      NAMESPACE_ACTIVITY_SCHEMA . 'make-friend' );
+define('ACTIVITY_REQ_FRIEND',  NAMESPACE_ACTIVITY_SCHEMA . 'request-friend' );
+define('ACTIVITY_UNFRIEND',    NAMESPACE_ACTIVITY_SCHEMA . 'remove-friend' );
+define('ACTIVITY_FOLLOW',      NAMESPACE_ACTIVITY_SCHEMA . 'follow' );
+define('ACTIVITY_UNFOLLOW',    NAMESPACE_ACTIVITY_SCHEMA . 'stop-following' );
+define('ACTIVITY_POST',        NAMESPACE_ACTIVITY_SCHEMA . 'post' );
+define('ACTIVITY_UPDATE',      NAMESPACE_ACTIVITY_SCHEMA . 'update' );
+define('ACTIVITY_TAG',         NAMESPACE_ACTIVITY_SCHEMA . 'tag' );
+define('ACTIVITY_FAVORITE',    NAMESPACE_ACTIVITY_SCHEMA . 'favorite' );
 
-define( 'ACTIVITY_OBJ_COMMENT', NAMESPACE_ACTIVITY_SCHEMA . 'comment' );
-define( 'ACTIVITY_OBJ_NOTE',    NAMESPACE_ACTIVITY_SCHEMA . 'note' );
-define( 'ACTIVITY_OBJ_PERSON',  NAMESPACE_ACTIVITY_SCHEMA . 'person' );
-define( 'ACTIVITY_OBJ_PHOTO',   NAMESPACE_ACTIVITY_SCHEMA . 'photo' );
-define( 'ACTIVITY_OBJ_P_PHOTO', NAMESPACE_ACTIVITY_SCHEMA . 'profile-photo' );
-define( 'ACTIVITY_OBJ_ALBUM',   NAMESPACE_ACTIVITY_SCHEMA . 'photo-album' );
-define( 'ACTIVITY_OBJ_EVENT',   NAMESPACE_ACTIVITY_SCHEMA . 'event' );
-define( 'ACTIVITY_OBJ_TAGTERM', NAMESPACE_DFRN            . '/tagterm' );
+define('ACTIVITY_OBJ_COMMENT', NAMESPACE_ACTIVITY_SCHEMA . 'comment' );
+define('ACTIVITY_OBJ_NOTE',    NAMESPACE_ACTIVITY_SCHEMA . 'note' );
+define('ACTIVITY_OBJ_PERSON',  NAMESPACE_ACTIVITY_SCHEMA . 'person' );
+define('ACTIVITY_OBJ_PHOTO',   NAMESPACE_ACTIVITY_SCHEMA . 'photo' );
+define('ACTIVITY_OBJ_P_PHOTO', NAMESPACE_ACTIVITY_SCHEMA . 'profile-photo' );
+define('ACTIVITY_OBJ_ALBUM',   NAMESPACE_ACTIVITY_SCHEMA . 'photo-album' );
+define('ACTIVITY_OBJ_EVENT',   NAMESPACE_ACTIVITY_SCHEMA . 'event' );
+define('ACTIVITY_OBJ_TAGTERM', NAMESPACE_DFRN            . '/tagterm' );
 
 /**
  * item weight for query ordering
  */
 
-define( 'GRAVITY_PARENT',       0);
-define( 'GRAVITY_LIKE',         3);
-define( 'GRAVITY_COMMENT',      6);
+define('GRAVITY_PARENT',       0);
+define('GRAVITY_LIKE',         3);
+define('GRAVITY_COMMENT',      6);
 
 /**
  *

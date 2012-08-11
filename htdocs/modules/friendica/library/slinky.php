@@ -29,15 +29,15 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
 // Return options for Slinky_Service->url_get() AND ->url_post()
-define( 'SLINKY_BODY', 1 ); // Default
-define( 'SLINKY_HEADERS', 2 ); // Not implemented yet
-define( 'SLINKY_FINAL_URL', 3 ); // Default for lengthening URLs
+define('SLINKY_BODY', 1 ); // Default
+define('SLINKY_HEADERS', 2 ); // Not implemented yet
+define('SLINKY_FINAL_URL', 3 ); // Default for lengthening URLs
 
 // So that services may decide what to do with us
-define( 'SLINKY_USER_AGENT', 'Slinky v1.0 +http://dentedreality.com.au/projects/slinky/' );
+define('SLINKY_USER_AGENT', 'Slinky v1.0 +http://dentedreality.com.au/projects/slinky/' );
 
 // How many seconds until remote requests should be cut?
-define( 'SLINKY_TIMEOUT', 10 );
+define('SLINKY_TIMEOUT', 10 );
 
 /**
  * Slinky allows you to go back AND forth between "long" AND shortened URLs 

@@ -332,8 +332,8 @@ function scrape_feed($url) {
  */
 
 
-define( 'PROBE_NORMAL',   0);
-define( 'PROBE_DIASPORA', 1);
+define('PROBE_NORMAL',   0);
+define('PROBE_DIASPORA', 1);
 
 function probe_url($url, $mode = PROBE_NORMAL) {
 	require_once($GLOBALS['xoops']->path("/modules/friendica/include/email.php"));
